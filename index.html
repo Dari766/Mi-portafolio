@@ -13,35 +13,37 @@
 
     <nav class="navbar" aria-label="Navegación principal">
         <a class="logo" href="#inicio" aria-label="Ir al inicio">Dariana<span>.</span></a>
+        <label class="language-label" for="language-select" data-i18n="language.label">Idioma</label>
+        <select class="language-select" id="language-select" aria-label="Seleccionar idioma"><option value="es">🇪🇸 Español</option><option value="en">🇬🇧 English</option><option value="pt">🇧🇷 Português</option><option value="fr">🇫🇷 Français</option></select>
         <button class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro" title="Cambiar a modo oscuro"><span aria-hidden="true">☾</span></button>
         <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#tecnologias">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+            <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
+            <li><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+            <li><a href="#tecnologias" data-i18n="nav.skills">Habilidades</a></li>
+            <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+            <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
         </ul>
     </nav>
 
     <main>
         <header class="hero" id="inicio">
             <div class="hero-content">
-                <p class="eyebrow">PORTAFOLIO · DESARROLLO DE SOFTWARE</p>
+                <p class="eyebrow" data-i18n="hero.eyebrow">PORTAFOLIO · DESARROLLO DE SOFTWARE</p>
                 <img class="profile-photo" src="img/Fotografia 3x4.jpeg" alt="Fotografía de Dariana de la Cruz">
-                <h1>Hola, soy <span>Dariana de la Cruz</span></h1>
-                <h2>Desarrolladora de Software Junior</h2>
-                <p class="hero-description">
+                <h1><span data-i18n="hero.greeting">Hola, soy</span> <span>Dariana de la Cruz</span></h1>
+                <h2 data-i18n="hero.role">Desarrolladora de Software Junior</h2>
+                <p class="hero-description" data-i18n="hero.description">
                     Tecnóloga en Análisis y Desarrollo de Software. Tengo experiencia práctica en desarrollo de módulos,
                     formularios, consultas SQL y pruebas de software. Busco oportunidades para crecer en desarrollo
                     frontend y backend.
                 </p>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#proyectos">Ver mis proyectos</a>
-                    <a class="button button-secondary" href="#contacto">Contactarme</a>
+                    <a class="button button-primary" href="#proyectos" data-i18n="hero.projects">Ver mis proyectos</a>
+                    <a class="button button-secondary" href="#contacto" data-i18n="hero.contact">Contactarme</a>
                 </div>
             </div>
             <a class="scroll-indicator" href="#sobre-mi" aria-label="Desplazarse a la sección Sobre mí">↓</a>
@@ -49,21 +51,21 @@
 
         <section id="sobre-mi" class="section">
             <div class="section-heading">
-                <p class="eyebrow">CONÓCEME</p>
-                <h2>Sobre mí</h2>
+                <p class="eyebrow" data-i18n="about.eyebrow">CONÓCEME</p>
+                <h2 data-i18n="about.title">Sobre mí</h2>
             </div>
             <div class="about-card reveal">
-                <p>
+                <p data-i18n="about.p1">
                     Soy tecnóloga en <strong>Análisis y Desarrollo de Software</strong>, formada en el SENA.
                     Me interesa construir soluciones tecnológicas útiles, aprender nuevas herramientas y participar
                     en todas las etapas del desarrollo de software.
                 </p>
-                <p>
+                <p data-i18n="about.p2">
                     Durante mis prácticas participé en <strong>SAGI</strong>, un sistema orientado a la gestión de
                     módulos y servicios institucionales. Allí realicé actividades de desarrollo, manejo de datos,
                     elaboración de formularios, pruebas funcionales y documentación de resultados.
                 </p>
-                <p>
+                <p data-i18n="about.p3">
                     Me encuentro en búsqueda de oportunidades junior tanto en <strong>frontend</strong> como en
                     <strong>backend</strong>, donde pueda aportar mis conocimientos y continuar fortaleciendo mis habilidades.
                 </p>
@@ -72,54 +74,54 @@
 
         <section id="experiencia" class="section section-alt">
             <div class="section-heading">
-                <p class="eyebrow">EXPERIENCIA PRÁCTICA</p>
-                <h2>Lo que he realizado</h2>
+                <p class="eyebrow" data-i18n="experience.eyebrow">EXPERIENCIA PRÁCTICA</p>
+                <h2 data-i18n="experience.title">Lo que he realizado</h2>
             </div>
             <article class="experience-card reveal">
                 <div class="experience-top">
                     <div>
-                        <p class="experience-type">Prácticas formativas</p>
-                        <h3>Participación en el desarrollo de SAGI</h3>
-                        <p class="muted">Sistema de gestión de módulos y servicios institucionales del SENA</p>
+                        <p class="experience-type" data-i18n="experience.type">Prácticas formativas</p>
+                        <h3 data-i18n="experience.heading">Participación en el desarrollo de SAGI</h3>
+                        <p class="muted" data-i18n="experience.subtitle">Sistema de gestión de módulos y servicios institucionales del SENA</p>
                     </div>
                     <span class="experience-tag">SENA</span>
                 </div>
                 <ul class="task-list">
-                    <li>Desarrollo y ajuste de módulos del sistema.</li>
-                    <li>Elaboración y ejecución de consultas SQL.</li>
-                    <li>Creación y diligenciamiento de formularios.</li>
-                    <li>Ingreso y gestión de información en el sistema.</li>
-                    <li>Ejecución de pruebas de software para validar funcionalidades.</li>
-                    <li>Documentación de pruebas y registro de resultados.</li>
+                    <li data-i18n="experience.task1">Desarrollo y ajuste de módulos del sistema.</li>
+                    <li data-i18n="experience.task2">Elaboración y ejecución de consultas SQL.</li>
+                    <li data-i18n="experience.task3">Creación y diligenciamiento de formularios.</li>
+                    <li data-i18n="experience.task4">Ingreso y gestión de información en el sistema.</li>
+                    <li data-i18n="experience.task5">Ejecución de pruebas de software para validar funcionalidades.</li>
+                    <li data-i18n="experience.task6">Documentación de pruebas y registro de resultados.</li>
                 </ul>
             </article>
         </section>
 
         <section id="tecnologias" class="section">
             <div class="section-heading">
-                <p class="eyebrow">CONOCIMIENTOS TÉCNICOS</p>
-                <h2>Habilidades</h2>
-                <p class="section-description">Tecnologías y herramientas con las que he trabajado.</p>
+                <p class="eyebrow" data-i18n="skills.eyebrow">CONOCIMIENTOS TÉCNICOS</p>
+                <h2 data-i18n="skills.title">Habilidades</h2>
+                <p class="section-description" data-i18n="skills.description">Tecnologías y herramientas con las que he trabajado.</p>
             </div>
             <div class="skills-grid">
                 <article class="skill-card reveal">
                     <div class="skill-icon" aria-hidden="true">⌘</div>
-                    <h3>Lenguajes</h3>
+                    <h3 data-i18n="skills.languages">Lenguajes</h3>
                     <div class="skill-list"><span>Java</span><span>PHP</span><span>JavaScript</span></div>
                 </article>
                 <article class="skill-card reveal">
                     <div class="skill-icon" aria-hidden="true">▤</div>
-                    <h3>Desarrollo web</h3>
+                    <h3 data-i18n="skills.web">Desarrollo web</h3>
                     <div class="skill-list"><span>HTML</span><span>CSS</span></div>
                 </article>
                 <article class="skill-card reveal">
                     <div class="skill-icon" aria-hidden="true">▦</div>
-                    <h3>Bases de datos</h3>
+                    <h3 data-i18n="skills.databases">Bases de datos</h3>
                     <div class="skill-list"><span>MySQL</span><span>Consultas SQL</span></div>
                 </article>
                 <article class="skill-card reveal">
                     <div class="skill-icon" aria-hidden="true">✓</div>
-                    <h3>Procesos de software</h3>
+                    <h3 data-i18n="skills.processes">Procesos de software</h3>
                     <div class="skill-list"><span>Desarrollo de módulos</span><span>Formularios</span><span>Pruebas de software</span><span>Documentación de pruebas</span></div>
                 </article>
             </div>
@@ -127,28 +129,28 @@
 
         <section id="proyectos" class="section section-alt">
             <div class="section-heading">
-                <p class="eyebrow">TRABAJO REALIZADO</p>
-                <h2>Mis proyectos</h2>
-                <p class="section-description">Una muestra de proyectos en los que he participado y trabajado.</p>
+                <p class="eyebrow" data-i18n="projects.eyebrow">TRABAJO REALIZADO</p>
+                <h2 data-i18n="projects.title">Mis proyectos</h2>
+                <p class="section-description" data-i18n="projects.description">Una muestra de proyectos en los que he participado y trabajado.</p>
             </div>
             <div class="projects-grid">
                 <article class="project-card reveal">
                     <img src="img/Sagi.png" alt="Vista del sistema SAGI" loading="lazy">
                     <div class="project-content">
-                        <p class="project-type">Experiencia de prácticas</p>
+                        <p class="project-type" data-i18n="projects.sagi.type">Experiencia de prácticas</p>
                         <h3>SAGI</h3>
-                        <p>Sistema orientado a la gestión de módulos y servicios institucionales del SENA. Durante mis prácticas participé en el desarrollo de módulos, consultas SQL, formularios, ingreso de datos y pruebas de software.</p>
+                        <p data-i18n="projects.sagi.description">Sistema orientado a la gestión de módulos y servicios institucionales del SENA. Durante mis prácticas participé en el desarrollo de módulos, consultas SQL, formularios, ingreso de datos y pruebas de software.</p>
                         <div class="project-tags"><span>Java</span><span>PHP</span><span>JavaScript</span><span>MySQL</span></div>
-                        <a class="project-link" href="https://senacda.com/sagi/" target="_blank" rel="noopener noreferrer">Conocer SAGI <span aria-hidden="true">↗</span></a>
+                        <a class="project-link" href="https://senacda.com/sagi/" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.sagi.link">Conocer SAGI</span> <span aria-hidden="true">↗</span></a>
                     </div>
                 </article>
                 <article class="project-card reveal">
                     <img src="img/Shoop.png" alt="Vista del proyecto Shoop" loading="lazy">
                     <div class="project-content">
-                        <p class="project-type">Proyecto de formación</p>
+                        <p class="project-type" data-i18n="projects.shoop.type">Proyecto de formación</p>
                         <h3>Shoop</h3>
-                        <p>Proyecto CRUD enfocado en la gestión de inventarios y administración de ventas de productos, con funcionalidades para organizar la información y apoyar los procesos comerciales.</p>
-                        <a class="project-link" href="https://shoop.ct.ws/" target="_blank" rel="noopener noreferrer">Conocer Shoop <span aria-hidden="true">↗</span></a>
+                        <p data-i18n="projects.shoop.description">Proyecto CRUD enfocado en la gestión de inventarios y administración de ventas de productos, con funcionalidades para organizar la información y apoyar los procesos comerciales.</p>
+                        <a class="project-link" href="https://shoop.ct.ws/" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.shoop.link">Conocer Shoop</span> <span aria-hidden="true">↗</span></a>
                     </div>
                 </article>
             </div>
@@ -156,21 +158,21 @@
 
         <section id="contacto" class="section contact-section">
             <div class="section-heading">
-                <p class="eyebrow">HABLEMOS</p>
-                <h2>Contacto</h2>
-                <p class="section-description">Estoy interesada en oportunidades junior de desarrollo frontend y backend. Puedes encontrarme en estos canales:</p>
+                <p class="eyebrow" data-i18n="contact.eyebrow">HABLEMOS</p>
+                <h2 data-i18n="contact.title">Contacto</h2>
+                <p class="section-description" data-i18n="contact.description">Estoy interesada en oportunidades junior de desarrollo frontend y backend. Puedes encontrarme en estos canales:</p>
             </div>
             <div class="contact-links">
-                <a href="mailto:marceladariana15@gmail.com"><span aria-hidden="true">✉</span> Email</a>
-                <a href="https://github.com/Dari766" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">⌘</span> GitHub</a>
-                <a href="https://www.linkedin.com/in/dariana-de-la-cruz-a9566b387" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">in</span> LinkedIn</a>
-                <a href="Documentos/cv%20Dariana%20de%20la%20cruz.pdf" download><span aria-hidden="true">↓</span> Descargar CV</a>
+                <a href="mailto:marceladariana15@gmail.com"><span aria-hidden="true">✉</span> <span data-i18n="contact.email">Email</span></a>
+                <a href="https://github.com/Dari766" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">⌘</span> <span data-i18n="contact.github">GitHub</span></a>
+                <a href="https://www.linkedin.com/in/dariana-de-la-cruz-a9566b387" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">in</span> <span data-i18n="contact.linkedin">LinkedIn</span></a>
+                <a href="Documentos/cv%20Dariana%20de%20la%20cruz.pdf" download><span aria-hidden="true">↓</span> <span data-i18n="contact.cv">Descargar CV</span></a>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>© <span id="current-year"></span> Dariana de la Cruz. Desarrollado con dedicación.</p>
+        <p>© <span id="current-year"></span> Dariana de la Cruz. <span data-i18n="footer.text">Desarrollado con dedicación.</span></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
