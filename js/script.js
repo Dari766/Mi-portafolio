@@ -1,3 +1,32 @@
+// Selector de tema claro/oscuro. La elección se conserva entre visitas.
+const themeToggle = document.querySelector(".theme-toggle");
+const themeIcon = themeToggle?.querySelector("span");
+const themeColorMeta = document.querySelector("#theme-color-meta");
+const savedTheme = localStorage.getItem("portfolio-theme");
+const initialTheme = savedTheme === "dark" ? "dark" : "light";
+
+function applyTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    const isDark = theme === "dark";
+    if (themeIcon) themeIcon.textContent = isDark ? "☀" : "☾";
+    if (themeToggle) {
+        const label = isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro";
+        themeToggle.setAttribute("aria-label", label);
+        themeToggle.setAttribute("title", label);
+    }
+    if (themeColorMeta) themeColorMeta.setAttribute("content", isDark ? "#0b0b0c" : "#f8fafc");
+}
+
+applyTheme(initialTheme);
+
+if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+        const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        localStorage.setItem("portfolio-theme", nextTheme);
+        applyTheme(nextTheme);
+    });
+}
+
 // Habilita animaciones progresivas solo cuando JavaScript está disponible.
 document.documentElement.classList.add("js-enabled");
 
