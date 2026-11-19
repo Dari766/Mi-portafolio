@@ -131,6 +131,36 @@ main,
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+/* BOTÓN PARA CAMBIAR EL TEMA */
+.navbar .theme-toggle {
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.navbar .theme-toggle:hover {
+    background: var(--surface-hover);
+    transform: scale(1.08);
+}
+
+.navbar .theme-toggle:focus-visible {
+    outline: 2px solid var(--text);
+    outline-offset: 3px;
+}
+
 /* HERO */
 .hero {
     min-height: 100svh;
