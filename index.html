@@ -3,175 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Dariana</title>
-
+    <meta name="description" content="Portafolio profesional de Dariana de la Cruz, desarrolladora de software junior con experiencia en desarrollo web, bases de datos y pruebas de software.">
+    <meta name="theme-color" content="#0f172a">
+    <title>Dariana de la Cruz | Desarrolladora de Software Junior</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar">
+    <div id="particles-js" aria-hidden="true"></div>
 
-    <div class="logo">
-        Dariana :)
-    </div>
-        <div class="menu-toggle">
-
-        ☰
-
-        </div>
-
-        <ul class="nav-links">
-
-        <li><a href="#">Inicio</a></li>
-
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-
-        <li><a href="#tecnologias">Tecnologías</a></li>
-
-        <li><a href="#proyectos">Proyectos</a></li>
-
-        <li><a href="#contacto">Contacto</a></li>
-        
-
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="logo" href="#inicio" aria-label="Ir al inicio">Dariana<span>.</span></a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#tecnologias">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
-
     </nav>
-    <!-- HERO -->
-    <header class="hero">
 
-        <img src="img/Fotografia 3x4.jpeg" alt="Foto de Dariana">
-
-        <h1>Hola, soy Dariana de la cruz 👋</h1>
-
-        <h2>Desarrolladora de Software Junior</h2>
-
-        <p>
-            Apasionada por el desarrollo de software y la creación
-            de sistemas que optimicen procesos y mejoren la organización.
-        </p>
-
-        <a href="#proyectos">Ver proyectos</a>
-
-    </header>
-
-    <!-- SOBRE MI -->
-    <section class="sobre-mi">
-        <section id="sobre-mi" class="sobre-mi hidden"></section>
-
-        <h2>Sobre mí</h2>
-
-        <p>
-            <p>
-            Soy tecnóloga en Análisis y Desarrollo de Software, con 
-            experiencia en el desarrollo de proyectos orientados a la 
-            gestión y optimización de procesos institucionales. 
-            Participé en el desarrollo de SAGI; Un sistema enfocado 
-            en la administración de módulos/servicios del SENA, y en 
-            Shoop; Proyecto de grado enfocado en soluciones tecnológicas, 
-            orientadas a la gestión y experiencia de usuario.
-            </p>
-        </p>
-
-    </section>
-
-    <!-- TECNOLOGIAS -->
-    <section class="tecnologias">
-        <section id="tecnologias" class="tecnologias hidden"></section>
-
-        <h2>Tecnologías</h2>
-
-        <div class="cards">
-
-            <div class="card">Java</div>
-            <div class="card">MySQL</div>
-            <div class="card">HTML</div>
-            <div class="card">PHP</div>
-            <div class="card">Phyton</div>
-            <div class="card">CSS</div>
-            <div class="card">JavaScript</div>
-            <div class="card">GitHub</div>
-            <div class="card">Bootstrap</div>
-            <div class="card">Consumo de APIs REST</div>
-            <div class="card">Node.js</div>
-            <div class="card">Visual Studio Code</div>
-
-        </div>
-
-    </section>
-
-    <!-- PROYECTOS -->
-    <section id="proyectos">
-
-        <h2>Proyectos</h2>
-
-        <div class="proyecto">
-
-            <img src="img/Sagi.png" alt="Proyecto SAGI">
-
-            <h3>SAGI</h3>
-
-            <p>
-                Sistema desarrollado para gestionar módulos
-                y servicios institucionales del SENA. Ficha 2773071.
-            </p>
-            <a href="https://senacda.com/sagi/" target="_blank">Ver proyecto</a>
-        </div>
-
-        <div class="proyecto">
-
-            <img src="img/Shoop.png" alt="Software Shoop">
-
-            <h3>Shoop</h3>
-
-            <p>
-                <p>
-                    Sistema CRUD desarrollado para la gestión de 
-                    inventarios y administración de ventas de productos, 
-                    orientado a optimizar el control de información, 
-                    registro de productos y seguimiento de procesos 
-                    comerciales.
+    <main>
+        <header class="hero" id="inicio">
+            <div class="hero-content">
+                <p class="eyebrow">PORTAFOLIO · DESARROLLO DE SOFTWARE</p>
+                <img class="profile-photo" src="img/Fotografia 3x4.jpeg" alt="Fotografía de Dariana de la Cruz">
+                <h1>Hola, soy <span>Dariana de la Cruz</span></h1>
+                <h2>Desarrolladora de Software Junior</h2>
+                <p class="hero-description">
+                    Tecnóloga en Análisis y Desarrollo de Software. Tengo experiencia práctica en desarrollo de módulos,
+                    formularios, consultas SQL y pruebas de software. Busco oportunidades para crecer en desarrollo
+                    frontend y backend.
                 </p>
-            </p>
-            <a href="https://shoop.ct.ws/" target="_blank">Ver proyecto</a>
-        </div>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#proyectos">Ver mis proyectos</a>
+                    <a class="button button-secondary" href="#contacto">Contactarme</a>
+                </div>
+            </div>
+            <a class="scroll-indicator" href="#sobre-mi" aria-label="Desplazarse a la sección Sobre mí">↓</a>
+        </header>
 
-    </section>
+        <section id="sobre-mi" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">CONÓCEME</p>
+                <h2>Sobre mí</h2>
+            </div>
+            <div class="about-card reveal">
+                <p>
+                    Soy tecnóloga en <strong>Análisis y Desarrollo de Software</strong>, formada en el SENA.
+                    Me interesa construir soluciones tecnológicas útiles, aprender nuevas herramientas y participar
+                    en todas las etapas del desarrollo de software.
+                </p>
+                <p>
+                    Durante mis prácticas participé en <strong>SAGI</strong>, un sistema orientado a la gestión de
+                    módulos y servicios institucionales. Allí realicé actividades de desarrollo, manejo de datos,
+                    elaboración de formularios, pruebas funcionales y documentación de resultados.
+                </p>
+                <p>
+                    Me encuentro en búsqueda de oportunidades junior tanto en <strong>frontend</strong> como en
+                    <strong>backend</strong>, donde pueda aportar mis conocimientos y continuar fortaleciendo mis habilidades.
+                </p>
+            </div>
+        </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="contacto hidden">
+        <section id="experiencia" class="section section-alt">
+            <div class="section-heading">
+                <p class="eyebrow">EXPERIENCIA PRÁCTICA</p>
+                <h2>Lo que he realizado</h2>
+            </div>
+            <article class="experience-card reveal">
+                <div class="experience-top">
+                    <div>
+                        <p class="experience-type">Prácticas formativas</p>
+                        <h3>Participación en el desarrollo de SAGI</h3>
+                        <p class="muted">Sistema de gestión de módulos y servicios institucionales del SENA</p>
+                    </div>
+                    <span class="experience-tag">SENA</span>
+                </div>
+                <ul class="task-list">
+                    <li>Desarrollo y ajuste de módulos del sistema.</li>
+                    <li>Elaboración y ejecución de consultas SQL.</li>
+                    <li>Creación y diligenciamiento de formularios.</li>
+                    <li>Ingreso y gestión de información en el sistema.</li>
+                    <li>Ejecución de pruebas de software para validar funcionalidades.</li>
+                    <li>Documentación de pruebas y registro de resultados.</li>
+                </ul>
+            </article>
+        </section>
 
-    <h2>Contacto</h2>
+        <section id="tecnologias" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">CONOCIMIENTOS TÉCNICOS</p>
+                <h2>Habilidades</h2>
+                <p class="section-description">Tecnologías y herramientas con las que he trabajado.</p>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card reveal">
+                    <div class="skill-icon" aria-hidden="true">⌘</div>
+                    <h3>Lenguajes</h3>
+                    <div class="skill-list"><span>Java</span><span>PHP</span><span>JavaScript</span></div>
+                </article>
+                <article class="skill-card reveal">
+                    <div class="skill-icon" aria-hidden="true">▤</div>
+                    <h3>Desarrollo web</h3>
+                    <div class="skill-list"><span>HTML</span><span>CSS</span></div>
+                </article>
+                <article class="skill-card reveal">
+                    <div class="skill-icon" aria-hidden="true">▦</div>
+                    <h3>Bases de datos</h3>
+                    <div class="skill-list"><span>MySQL</span><span>Consultas SQL</span></div>
+                </article>
+                <article class="skill-card reveal">
+                    <div class="skill-icon" aria-hidden="true">✓</div>
+                    <h3>Procesos de software</h3>
+                    <div class="skill-list"><span>Desarrollo de módulos</span><span>Formularios</span><span>Pruebas de software</span><span>Documentación de pruebas</span></div>
+                </article>
+            </div>
+        </section>
 
-    <p>
-        Actualmente disponible para oportunidades como
-        desarrolladora junior y roles tecnológicos.
-    </p>
+        <section id="proyectos" class="section section-alt">
+            <div class="section-heading">
+                <p class="eyebrow">TRABAJO REALIZADO</p>
+                <h2>Mis proyectos</h2>
+                <p class="section-description">Una muestra de proyectos en los que he participado y trabajado.</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card reveal">
+                    <img src="img/Sagi.png" alt="Vista del sistema SAGI" loading="lazy">
+                    <div class="project-content">
+                        <p class="project-type">Experiencia de prácticas</p>
+                        <h3>SAGI</h3>
+                        <p>Sistema orientado a la gestión de módulos y servicios institucionales del SENA. Durante mis prácticas participé en el desarrollo de módulos, consultas SQL, formularios, ingreso de datos y pruebas de software.</p>
+                        <div class="project-tags"><span>Java</span><span>PHP</span><span>JavaScript</span><span>MySQL</span></div>
+                        <a class="project-link" href="https://senacda.com/sagi/" target="_blank" rel="noopener noreferrer">Conocer SAGI <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="project-card reveal">
+                    <img src="img/Shoop.png" alt="Vista del proyecto Shoop" loading="lazy">
+                    <div class="project-content">
+                        <p class="project-type">Proyecto de formación</p>
+                        <h3>Shoop</h3>
+                        <p>Proyecto CRUD enfocado en la gestión de inventarios y administración de ventas de productos, con funcionalidades para organizar la información y apoyar los procesos comerciales.</p>
+                        <a class="project-link" href="https://shoop.ct.ws/" target="_blank" rel="noopener noreferrer">Conocer Shoop <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <div class="contact-links">
+        <section id="contacto" class="section contact-section">
+            <div class="section-heading">
+                <p class="eyebrow">HABLEMOS</p>
+                <h2>Contacto</h2>
+                <p class="section-description">Estoy interesada en oportunidades junior de desarrollo frontend y backend. Puedes encontrarme en estos canales:</p>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:marceladariana15@gmail.com"><span aria-hidden="true">✉</span> Email</a>
+                <a href="https://github.com/Dari766" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">⌘</span> GitHub</a>
+                <a href="https://www.linkedin.com/in/dariana-de-la-cruz-a9566b387" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">in</span> LinkedIn</a>
+                <a href="Documentos/cv%20Dariana%20de%20la%20cruz.pdf" download><span aria-hidden="true">↓</span> Descargar CV</a>
+            </div>
+        </section>
+    </main>
 
-        <a href="mailto:marceladariana15@gmail.com">
-            📧 Email
-        </a>
-
-        <a href="https://github.com/Dari766" target="_blank">
-            💻 GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/dariana-de-la-cruz-a9566b387 " target="_blank">
-            💼 LinkedIn
-        </a>
-
-        <a href="Documentos/cv Dariana de la cruz.pdf" download>
-            📄 Descargar CV
-        </a>
-
-    </div>
-
-</section>
-
-    <script src="js/script.js"></script>
-        <div id="particles-js"></div>
+    <footer class="footer">
+        <p>© <span id="current-year"></span> Dariana de la Cruz. Desarrollado con dedicación.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
